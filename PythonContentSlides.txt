@@ -1,0 +1,760 @@
+Indentation is used in Python to delimit blocks. The number of spaces  is	variable,	but	all	statements	within	the	same	block	must	be
+indented the same amount.
+The header line for compound statements, such as if, while, def, and
+class should be terminated with a colon ( : )
+The semicolon ( ; ) is optional at the end of statement.
+Printing to the Screen:
+Reading Keyboard Input:
+Comments
+Single line:
+Multiple lines:
+Python files have extension .py
+
+
+Python accepts single ('), double (") and triple (''' or """) quotes to denote string literals, as long as the same type of quote starts and ends the string.
+
+The triple quotes can be used to span the string across multiple lines.
+
+word = 'word‘
+
+sentence = "This is a sentence.“
+
+paragraph = """This is a paragraph. It is
+made up of multiple lines and sentences."""
+A hash sign (#) that is not inside a string literal begins a comment. 
+
+# First comment
+print "Hello, Python!";  # second comment
+
+Multiple Statements on a Single Line
+
+The semicolon ( ; ) allows multiple statements on the single line given that neither statement starts a new code block.
+
+
+
+Integrated Development Environment
+
+We can run Python from a graphical user interface (GUI) environment as well. All you need is a GUI application on your system that supports Python.
+
+Unix: IDLE is the very first Unix IDE for Python.
+
+Windows: PythonWin is the first Windows interface for Python and is an IDE with a GUI.
+
+Macintosh: The Macintosh version of Python along with the IDLE IDE is available from the main website, downloadable as either MacBinary or BinHex'd files.
+
+Tokens are the smallest unit of any programming language.
+
+Keywords.
+
+Literals/Constants
+
+Identifier
+
+Operator
+
+Separators
+
+
+A Python identifier is a name used to identify a variable, function, class, module or other object.
+
+ A Python identifier can be a combination of lowercase/uppercase letters, digits, or an underscore. The following characters are valid:
+Lowercase letters (a to z)
+Uppercase letters (A to Z)
+Digits (0 to 9)
+Underscore (_)
+
+
+Some valid names are:
+
+myVar
+var_3
+this_works_too
+_9lives
+Lives9
+
+An invalid name:
+
+9lives
+
+
+
+We cannot use special symbols in the identifier name. Some of these are:
+!
+@
+#
+$
+%
+.
+We cannot use a keyword as an identifier.
+
+
+Arithmetic Operators
+
+Comparison (Relational) Operators
+
+Assignment Operators
+
+Logical Operators
+
+Bitwise Operators
+
+Membership Operators
+
+Identity Operators
+
+
+>>>a = 10
+>>>b = 20
+
+>>>a+b		#30
+>>>a-b		#-10
+>>>a*b		#200
+>>>b/a		#2
+>>>b%a		#0
+>>>a**b		#10 to the power of 20
+>>>a//b		#0
+
+
+>>>a = 10
+>>>b = 20
+
+>>>a==b		#False
+>>>a!=b		#True
+>>>a>b		#False
+>>>a<b		#True
+>>>a>=b		#False
+>>>a<=b		#True
+
+
+>>> a = “appin tech lab”
+>>> “lab” in a			//true
+>>> “bhopal” in a		//false
+>>> “bhopal” not in a 	//true
+
+
+>>> x = 45
+>>> y = ‘45’
+>>> x is y		//false
+>>> z = 45
+>>> x is z 		//true
+>>> x is not y		//true
+
+
+Variables are nothing but reserved memory locations to store values. 
+This means that when you create a variable you reserve some space in memory.
+Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory.
+
+	bp = 10000
+	pi   = 3.14      
+	nm    = “appin“
+
+	a = b = c = 1
+
+	a, b, c = 1, 2, “appin"
+
+
+The data stored in memory can be of many types. 
+For example, a person's age is stored as a numeric value and his or her address is stored as alphanumeric characters. 
+
+	Python has five standard data types:
+Numbers
+String
+List
+Set
+Tuple
+Dictionary
+
+
+Numbers are Immutable objects in Python that cannot change their values.
+There are three built-in data types for numbers in Python3:
+Integer (int)
+Floating-point numbers (float)
+Common Number Functions
+
+
+int() : to convert x to an integer
+float() : 
+
+Python Strings are Immutable objects that cannot change their values.
+
+You can update an existing string by (re)assigning a variable to another string.
+Python does not support a character type; these are treated as strings of length one.
+Python accepts single ('), double (") and triple (''' or """) quotes to denote string literals.
+
+
+String indexes starting at 0 in the beginning of the string and working their way from -1
+at the end.
+
+
+
+Common String Operators
+Assume string variable a holds 'Hello' and variable b holds 'Python’
+ if a = "Hello" and b = "Python"
+
+a + b will give HelloPython
+
+a*2 will give HelloHello
+
+a[1] will give e  a[-1] will give o
+a[1:4] will give ell
+a[2:] will give 2nd to end
+
+
+‘H’ in a will give True
+
+isaplha() : Returns True if string has at least 1 character and all characters are  alphanumeric and False otherwise.
+isdigit() : Returns True if string contains only digits and False otherwise.
+replace() : Replaces all occurrences of old in string with new.
+split() : Splits string according to delimiter str (space if not provided)  and returns list of substrings.
+
+
+List:
+A list in Python is an ordered group of items or elements, and these list elements don't  have to be of the same type.
+Python Lists are mutable objects that can change their values.
+A list contains items separated by commas and enclosed within square brackets.
+List indexes like strings starting at 0 in the beginning of the list and working their way  from -1 at the end.
+Similar to strings, Lists operations include slicing ([ ] and [:]) , concatenation (+),
+repetition (*), and membership (in).
+This example shows how to access, update and delete list elements:
+
+
+methods:
+append(), insert(), pop(), count(), index(), remove(), sort()
+
+list = [‘appin', ‘tech', ‘lab']  list.append(‘bhopal')         	## append bhopal at end  list.insert(0, ‘welcome')        		## insert welcome at index 0  list.extend(['yyy', 'zzz'])  		## add list at end  print (list)  	  print (list.index(‘tech'))    	## 2  list.remove(‘lab')         ## search and remove that element  list.pop(1)                  ## removes and returns ‘appin'  print (list)  
+
+
+
+Tuple:
+
+Python	Tuples	are	Immutable	objects	that	cannot	be	changed	once  they	have	been
+created.
+A tuple contains items separated by commas and enclosed in parentheses instead of  square brackets.
+No update
+You can update an existing tuple by (re)assigning a variable to another tuple.
+Tuple objects protect your data against accidental changes to these data.
+The rules for tuple indices are the same as for lists and they have the same operations,
+functions as well.
+
+
+1. Appending Performance
+Mutability is more efficient when you know you will be frequently modifying an object.
+
+2. Memory Efficiency
+Efficiency: Immutability Wins!
+
+
+Set: 
+
+A set is created by placing all the items inside curly braces {}, separated by comma or by using the built-in function set().
+
+Python Set objects are immutable objects that can not change their values.
+
+A set is an unordered collection of items. Every element is unique (no duplicates) and must be immutable (which cannot be changed).
+	s = {1, 2, 3, 4, 5} or s = set()
+	
+
+We can add single element using the add() method and multiple elements using the update() method. 
+The update() method can take tuples, lists, strings or other sets as its argument. In all cases, duplicates are avoided.
+
+add(), update()
+
+The only difference between the two is that, while using discard() if the item does not exist in the set, it remains unchanged. But remove() will raise an error in such condition.
+
+discard(), remove(), pop(), clear()
+
+
+Dictionary:
+
+Python's dictionaries are kind of hash table type which consist of key-value pairs
+of unordered elements.
+Keys : must be immutable data types ,usually numbers or strings.
+Values : can be any arbitrary Python object.
+Python Dictionaries are mutable objects that can change their values.
+A dictionary is enclosed by curly braces ({ }), the items are separated by commas,  and each key is separated from its value by a colon (:).
+Dictionary’s values can be assigned and accessed using square braces ([]) with a  key to obtain its value.
+
+
+Example:
+
+dict = {'name':'john','age':25,'city':'bhopal'}
+print(dict['name'])
+print(dict['age'])
+print(dict.keys())      		#display dictionary keys
+print(dict.items())     		#display dictionary pairs
+print(dict.values())    		#display dictionary values
+dict['age']= 30         		#update existing values
+dict['dob']= "10/11/2000"  	#Add new Values
+print(dict)
+del dict['dob']         		#remove entry with key name
+print(dict)
+dict.clear()            		#remove all entries in dictionary
+print(dict)
+del dict                		#delete entire dictionary
+print(dict)
+
+
+Conditional:
+
+if is a very powerful decision making statement. If statement first check the condition and if the condition is true then it will executed the statement which are related to any particular code block.
+
+if expression:
+   statement(s)
+
+n = int(input('enter any number'))
+if n<10:
+	print(n)				#Must be indented
+
+
+
+An else statement can be combined with an if statement. An else statement contains the block of code that executes if the conditional expression in the if statement resolves to 0 or a false value.
+The else statement is an optional statement and there could be at most only one else statement following if .
+
+if expression:
+   statement(s)
+else:
+   statement(s)
+
+
+a=input("Enter no1")
+b=input("Enter no2")
+if a<b:
+	print (“Second number  “+ b+ ” is bigger.”)
+else:
+	print (“Frist number  “+ a+ ” is bigger.”)
+
+
+The elif statement allows you to check multiple expressions for truth value and execute a block of code as soon as one of the conditions evaluates to true.
+Like the else, the elif statement is optional. However, unlike else, for which there can be at most one statement, there can be an arbitrary number of elif statements following an if.
+
+if expression1:
+  		 statement(s)
+elif expression2:
+   		statement(s)
+elif expression3:
+   		statement(s)
+else:
+   		statement(s)
+
+
+There may be a situation when you want to check for another condition after a condition resolves to true. In such a situation, you can use the nested if construct.
+In a nested if construct, you can have an if...elif...else construct inside another if...elif...else construct.
+
+
+If the suite of an if clause consists only of a single line, it may go on the same line as the header statement.
+
+a=input("Enter no1")
+if a<10: print ("No is single“)
+
+
+fruit = 'Apple'
+isApple = True if fruit == 'Apple' else False
+print isApple
+
+a = 2
+b = 330
+print("A") if a > b else print("B")
+
+
+Looping:
+
+There may be a situation when you need to execute a block of code several number of times.
+ In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.
+A loop statement allows us to execute a statement or group of statements multiple times.
+We can use 2 looping statements in Python
+For
+While
+A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times.
+
+A for loop is useful when you know how many times a task is to be repeated.
+
+The for loop in Python has the ability to iterate over the items of any sequence, such as a list or a string.
+
+
+for var in sequence:
+   statements(s)
+
+If a sequence contains an expression list, it is evaluated first. 
+
+Then, the first item in the sequence is assigned to the iterating variable “var”. 
+
+Next, the statements block is executed. Each item in the list is assigned to “var”, and the statement(s) block is executed until the entire sequence is exhausted.
+
+
+for p in 'Appin':
+   print(p)
+
+
+script = ['JSP', 'PHP','ASP','Python']
+for p in script:
+   print (p)
+
+
+len() is a built-in function, which provides the total number of elements.
+
+range() is a built-in function to give us the actual sequence to iterate over.
+
+script = ['JSP', 'PHP','ASP','Python']
+for p in range(len(script)):
+				print (script[p])
+
+
+
+for n in range(1,11):
+	print (n)
+
+for counter in range(10, 0, -1):
+        print (counter,)
+
+for a in range(1,6):
+	for b in range(0,a):
+		print ("*",)
+	print (“ ”)
+
+
+the break statement gets you out of a loop.  
+
+No matter what the loop's ending condition, break immediately says "I'm out here!"  The program continues with the next statement immediately following the loop.
+  
+Break stops only the loop in which it resides. 
+ 
+It does not break out of a "nested loop" (a loop within a loop).
+
+for n in range(1,11):
+	if n==6:
+		break
+	print(n)
+
+
+The pass statement in Python is used when a statement is required syntactically but you do not want any command or code to execute.
+
+The pass statement is a null operation; nothing happens when it executes.
+
+for n in range(2,20):
+	if n==10:
+		pass
+	else:
+		for p in range(1,11):
+			print (n*p)
+	print ("==================“)
+
+
+continue performs a "jump" to the next test condition in a loop.
+  
+The test condition is then evaluated as usual, and the loop is executed as long as the test condition remains true.  
+
+The continue statement may be used ONLY in iteration statements (loops).  
+
+It serves to bypass a portion of the body of the loop within iteration
+
+
+for n in range(1,11):
+	if n==6:
+		continue
+	print(n)
+
+
+While loop:
+
+A while loop is a control structure that allows you to repeat a task a certain number of times.
+
+while boolean_expression :
+   statement(s)
+
+When executing, if the boolean_expression result is true then the actions inside the loop will be executed. 
+This will continue as long as the expression result is true.
+
+cn=0
+while cn<10:
+	cn+=1
+	print(cn)
+
+
+Python supports to have an else statement associated with a loop statement.
+If the else statement is used with a for loop, the else statement is executed when the loop has exhausted (worn out) iterating the list.
+If the else statement is used with a while loop, the else statement is executed when the condition becomes false.
+	cn=0
+	while cn<10:
+		cn+=1
+		print(cn)
+	else:
+		print(“Now counter value is 10”)	
+
+
+
+Functions:
+
+Functions will be one of our main building blocks when we construct larger and larger amounts of code to solve problems.
+
+Why function does: Groups together a set of statements so they can be run more than once.
+
+We can specify parameters that can serve as inputs to the functions.
+
+Functions will be one of most basic levels of reusing code in Python.
+
+It will also allow us to start thinking of program design
+
+
+def Keyword use to define function.
+
+def function_name():
+	print(“This is function message.”)
+
+
+Function Arguments
+You can call a function by using any of the following types of arguments:
+Required arguments: the arguments passed to the function in correct  positional order.
+Keyword arguments: the function call identifies the arguments by the  parameter names.
+Default arguments: the argument has a default value in the function  declaration used when the value is not provided in the function call.
+
+
+*args		=	for List/tuple
+**kwargs		=	for dictionary
+
+
+def my_function(subject)  print("I am learning" + subject)my_function(“Linux")my_function(“Networking")my_function()my_function(“Python")
+
+
+The filter() function in Python takes in a function and a list as arguments. This offers an elegant way to filter out all the elements of a sequence “sequence”, for which the function returns True. Here is a small program that returns the odd numbers from an input list:
+# Python code to illustrate
+# filter() with lambda()
+li = [5, 7, 22, 97, 54, 62, 77, 23, 73, 61]
+final_list = list(filter(lambda x: (x%2 != 0) , li))
+print(final_list)
+
+
+The map() function in Python takes in a function and a list as argument. The function is called with a lambda function and a list and a new list is returned which contains all the lambda modified items returned by that function for each item. Example:
+
+# to get double of a list.
+li = [5, 7, 22, 97, 54, 62, 77, 23, 73, 61]
+final_list = list(map(lambda x: x*2 , li))
+print(final_list)
+
+
+The reduce() function in Python takes in a function and a list as argument. The function is called with a lambda function and a list and a new reduced result is returned. This performs a repetitive operation over the pairs of the list. This is a part of functools module. Example:
+
+
+# to get sum of a list
+from functools import reduce
+li = [5, 8, 10, 20, 50, 100]
+sum = reduce((lambda x, y: x + y), li)
+print (sum)
+
+Modules:
+
+A module is a file consisting of Python code that can define functions, classes and  variables.
+A module allows you to organize your code by grouping related code which makes the
+code easier to understand and use.
+You can use any Python source file as a module by executing an import statement
+
+Python's from statement lets you import specific attributes from a module into the
+current namespace.
+
+
+import * statement can be used to import all names from a module into the current  namespace
+
+
+A module can also include runnable code.
+
+Any Python source file is a module
+# spam.py  def grok(x):
+...
+
+def blah(x):
+...
+
+You use import to execute and access it
+import spam
+a = spam.grok('hello')
+
+from spam import grok
+a = grok('hello')
+
+Global variables bind inside the same module
+# spam.py  x = 42
+
+def abc():
+print(x)
+Functions record their definition environment
+>>> from spam import abc
+>>> abc. module 	
+'spam'
+>>> abc. globals 	
+{ 'x': 42, ... }
+>>>
+
+File handling:
+
+
+We have been reading and writing to the standard input and output. 
+
+Now, we will see how to play with actual data files.
+
+Python provides basic functions and methods necessary to manipulate files by default. 
+
+We can do your most of the file manipulation using a file object.
+
+Before you can read or write a file, you have to open it using Python's built-in open() function. 
+This function creates a file object, which would be utilized to call other support methods associated with it.
+Syntax
+file_object = open(file_name [, access_mode][, buffering])
+
+file_name: The file_name argument is a string value that contains the name of the file that you want to access.
+
+access_mode: The access_mode determines the mode in which the file has to be opened, i.e., read, write, append, etc. 
+
+buffering: If the buffering value is set to 0, no buffering will take place. If the buffering value is 1, line buffering will be performed while accessing a file. 
+
+
+fileObject = open(file_name [, access_mode][, buffering])
+
+Common access modes:
+“r” opens a file for reading only.
+“w” opens a file for writing only. Overwrites the file if the file exists.
+Otherwise, it creates a new file.
+“a” opens a file for appending. If the file does not exist, it creates a new file  for writing.
+fileObject.close()
+
+
+The close() method flushes any unwritten information and closes the file object.
+
+
+The read() method reads the whole file at once.
+The readline() method reads one line each time from the file.
+The readlines() method reads all lines from the file in a list.
+
+
+The write() method writes any string to an open file.
+writelines method write complete list object to file
+
+The write() method writes any string to an open file.
+writelines method write complete list object to file
+
+myobj = open("test.txt","w")    #"a"
+myobj.write("This is a ALSO A LINE")
+myobj.close()
+
+
+myobj=open("test.txt","r")
+text = myobj.read()
+print(text)
+myobj.close()
+
+
+To open a text file, use:
+fh = open("hello.txt", "r")
+
+To read a text file, use:
+fh = open("hello.txt","r")
+print fh.read()
+
+To read one line at a time, use:
+fh = open("hello".txt", "r")
+print fh.readline()
+
+To read a list of lines use:
+fh = open("hello.txt.", "r")
+print fh.readlines()
+
+To write to a file, use:
+fh = open("hello.txt","w")
+fh.write("Hello World")
+fh.close()
+
+
+
+To write to a file, use:
+fh = open("hello.txt", "w")
+lines_of_text = ["a line of text", "another line of text", "a third line"]
+fh.writelines(lines_of_text)
+fh.close()
+
+To append to file, use:
+fh = open("Hello.txt", "a")
+write("Hello World again")
+fh.close
+
+To close a file, use
+fh = open("hello.txt", "r")
+print fh.read()
+fh.close()
+
+
+Exception handling:
+
+Syntax errors, also known as parsing errors, are perhaps the most common kind of error you encounter.
+
+
+
+
+The parser repeats the offending line and displays a little ‘arrow’ pointing at the earliest point in the line where the error was detected. 
+Even if a statement or expression is syntactically correct, it may cause an error when an attempt is made to execute it. Errors detected during execution are called exceptions.
+
+Types:
+
+Exception
+ZeroDivisionError
+NameError
+TypeError
+IndentationError
+ArithmeticError
+ValueError
+IndexError
+
+
+try
+except
+finally
+else
+raise
+
+
+It is possible to write programs that handle selected exceptions. Consider the following, where a user-generated interruption is signaled by raising the KeyboardInterrupt exception.
+
+
+
+
+
+First the 'try' clause is executed until an exception occurs, in which case the rest of 'try' clause is skipped and the 'except' clause is executed (depending on type of exception), and execution continues.
+
+
+The last except clause (when many are declared) may omit the exception name(s), to serve as a wildcard. This makes it very easy to mask a real programming error. It can also be used to print an error message and then re-raise the exception.
+The try-except statement has an optional else clause, which, when present, must follow all except clauses. It is useful for code that must be executed if the try clause does not raise an exception.
+
+
+Raise:
+
+The raise statement allows the programmer to force a specified exception to occur.
+
+
+
+
+A simpler form of the raise statement allows one to re-raise the exception (if you don’t want to handle it):
+
+
+User-defined:
+
+Programs may name their own exceptions by creating a new exception class. These are derived from the Exception class, either directly or indirectly.
+
+
+
+
+
+
+
+
+
+Here, the def__init__() of Exception has been overridden. The new behavior simply creates the value attribute.
+
+
+The try statement has another optional clause which is intended to define clean-up actions that must be executed under all circumstances.
+
+
+
+
+
+The finally clause is also executed “on the way out” when any other clause of the try statement is exited using break/continue/return.
+
+
+
+
